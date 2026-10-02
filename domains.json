@@ -1,0 +1,64 @@
+{
+  "system1models.eu": {
+    "to": "https://system1models.ai",
+    "root": "/eu"
+  },
+  "decision-models.eu": {
+    "to": "https://system1models.ai",
+    "root": "/eu"
+  },
+  "bugfix.app": {
+    "to": "https://system1models.ai",
+    "root": "/"
+  },
+  "coderbot.cloud": {
+    "to": "https://system1models.ai",
+    "root": "/"
+  },
+  "janus.rodeo": {
+    "to": "https://system1models.ai",
+    "root": "/"
+  },
+  "parallax.training": {
+    "to": "https://system1models.ai",
+    "root": "/"
+  },
+  "agent-as-a-service.online": {
+    "to": "https://sandbox-as-a-service.com",
+    "root": "/"
+  },
+  "openclaw-as-a-service.com": {
+    "to": "https://sandbox-as-a-service.com",
+    "root": "/"
+  },
+  "anonym-tanzbar.com": {
+    "to": "https://diskret-tanzbar.de",
+    "root": "/"
+  },
+  "anonym-tanzbar.de": {
+    "to": "https://diskret-tanzbar.de",
+    "root": "/"
+  },
+  "chutes-search.com": {
+    "to": "https://search.chutes.ai",
+    "root": "/"
+  },
+  "tierenegetik.de": {
+    "to": "https://tierenergetik.online",
+    "root": "/"
+  },
+  "screengrasp.com": {
+    "to": "https://screengrasp.com",
+    "root": "/",
+    "hosts": [
+      "www.screengrasp.com"
+    ]
+  },
+  "blitz.ad": {
+    "to": "https://blitz.ad",
+    "root": "/",
+    "hosts": [
+      "www.blitz.ad"
+    ]
+  }
+}

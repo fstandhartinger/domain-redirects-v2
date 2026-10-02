@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { createServer } from "node:http";
 
-const serviceHost = "domain-redirects-v2.app.mintapis.com";
+const serviceHosts = new Set(["domain-redirects-v2.app.mintapis.com", "domain-redirects-v2b.app.mintapis.com"]);
 const config = JSON.parse(readFileSync(new URL("./domains.json", import.meta.url), "utf8"));
 const routes = new Map();
 const hostnamePattern = /^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/;
@@ -21,7 +21,7 @@ const server = createServer((request, response) => {
   const host = (request.headers.host ?? "").toLowerCase().replace(/:\d+$/, "");
   const target = request.url ?? "/";
 
-  if ((host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host === serviceHost) && request.method === "GET" && target === "/healthz") {
+  if ((host === "localhost" || host === "127.0.0.1" || host === "[::1]" || serviceHosts.has(host)) && request.method === "GET" && target === "/healthz") {
     response.writeHead(204, { "Cache-Control": "no-store" });
     return response.end();
   }

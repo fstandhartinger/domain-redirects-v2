@@ -9,6 +9,7 @@ try {
   for (let i=0; i<30; i++) { try { const r=await fetch('http://localhost:3000/healthz'); ready=r.status===204; } catch {} if (ready) break; await new Promise(r=>setTimeout(r,100)); }
   assert.ok(ready, 'service healthy');
   const cfg=JSON.parse(readFileSync(new URL('./domains.json',import.meta.url)));
+  for (const host of ['domain-redirects-v2.app.mintapis.com','domain-redirects-v2b.app.mintapis.com']) assert.equal((await probe('/healthz',host)).status,204);
   let checked=0;
   for (const [domain, route] of Object.entries(cfg)) {
     for (const host of route.hosts ?? [domain, `www.${domain}`]) {

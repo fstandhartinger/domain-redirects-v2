@@ -1,26 +1,26 @@
 {
   "system1models.eu": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/eu"
   },
   "decision-models.eu": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/eu"
   },
   "bugfix.app": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/"
   },
   "coderbot.cloud": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/"
   },
   "janus.rodeo": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/"
   },
   "parallax.training": {
-    "to": "https://system1models.ai",
+    "to": "https://decisionmodels.io",
     "root": "/"
   },
   "agent-as-a-service.online": {
